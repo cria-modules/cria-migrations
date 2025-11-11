@@ -14,7 +14,6 @@ SET FOREIGN_KEY_CHECKS=0;
 SET AUTOCOMMIT=0;
 START TRANSACTION;
 
-mysqldump: [Warning] Using a password on the command line interface can be insecure.
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -2834,15 +2833,7 @@ SET FOREIGN_KEY_CHECKS=1;
 
 -- DOWN
 
--- Rollback: Drop all tables from CENTRO database
--- WARNING: This will remove all data!
+-- WARNING: Rollback not implemented for complete database dump
+-- This migration is designed to be run on empty databases only
+-- To rollback, manually drop all tables or restore from backup
 
-SET FOREIGN_KEY_CHECKS=0;
-
-DROP TABLE IF EXISTS centro CASCADE;
-DROP TABLE IF EXISTS centri CASCADE;
-DROP TABLE IF EXISTS cfg_menu CASCADE;
-DROP TABLE IF EXISTS cfg_box_homepage CASCADE;
--- Add other CENTRO tables here as needed
-
-SET FOREIGN_KEY_CHECKS=1;
