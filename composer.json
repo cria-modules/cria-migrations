@@ -1,0 +1,20 @@
+{
+  "name": "cria/cria-migrations",
+  "description": "Database migrations and seed data for CRIA healthcare platform",
+  "type": "library",
+  "license": "proprietary",
+  "keywords": ["cria", "migrations", "database", "healthcare"],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cria\\Migrations\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0-dev"
+    }
+  }
+}
