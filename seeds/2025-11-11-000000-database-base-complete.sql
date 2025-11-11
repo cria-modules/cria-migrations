@@ -2,14 +2,9 @@
 -- Version: 2025-11-11-000000
 -- Module: core
 -- Description: Full dump of ehr_svil_stella_base (structure + initial configuration data)
---
--- This migration contains the complete database structure and initial data
--- for the BASE database (common tables shared across all centers)
---
--- Note: Future versions will split this into modular migrations per feature
+-- Source: MAMP Pro - ehr_svil_stella_base
 
 -- UP
-
 SET FOREIGN_KEY_CHECKS=0;
 SET AUTOCOMMIT=0;
 START TRANSACTION;
@@ -1711,8 +1706,4 @@ COMMIT;
 SET FOREIGN_KEY_CHECKS=1;
 
 -- DOWN
-
--- WARNING: Rollback not implemented for complete database dump
--- This migration is designed to be run on empty databases only
--- To rollback, manually drop all tables or restore from backup
-
+-- Rollback not supported for complete database dump
